@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "lbot"
+description = "the complete"
+version = "1"
+authors = [
+    {name = "botlib", email = "botlib@proton.met" },
+]
+readme = "README.rst"
+license = { text="Public Domain"}
+classifiers = [ 
+               'Development Status :: 3 - Alpha',
+               'License :: Public Domain',
+               'Operating System :: Unix',
+               'Programming Language :: Python',
+               'Topic :: Utilities'
+              ]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/lbot"
+"bugs" = "https://github.com/botlibX/lbbot/issues"
+"source" = "https://github.com/pylbotlibX/lbot"
+
+
+[tool.setuptools]
+packages = [
+            "lbot",
+            "lbot.modules"
+           ]
+script-files = ["bin/lbot"]
